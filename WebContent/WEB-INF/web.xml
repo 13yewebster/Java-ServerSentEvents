@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+    xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>ServerSentEvent_HttpServlet_example</display-name>
+    <welcome-file-list>
+        <welcome-file>LongTaskServlet.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <display-name>LongTaskServlet</display-name>
+        <servlet-name>LongTaskServlet</servlet-name>
+        <servlet-class>com.bye.project.LongTaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LongTaskServlet</servlet-name>
+        <url-pattern>/LongTaskServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <display-name>HelloServlet</display-name>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.bye.project.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/HelloServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
